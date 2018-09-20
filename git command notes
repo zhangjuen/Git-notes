@@ -8,6 +8,6 @@ git remote add origin https://github.com/zhangjuen/Photometry-Labjet6
 git push -u origin master
 git pull -f origin master
 git pull
-
+//before first commit, you may set your account information
 git config --global user.email YourEmal@Emal
 git config --global user.name YourName
