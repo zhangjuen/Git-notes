@@ -19,3 +19,19 @@ create a folder
 git init
 git remote add origin https://github.com/zhangjuen/Photometry-Labjet6
 git pull -f origin master
+
+
+//git pull wants you to either remove or save your current work so that the merge it triggers doesn't cause conflicts with your uncommitted work. Note that you should only need to remove/save untracked files if the changes you're pulling create files in the same locations as your local uncommitted files.
+
+//Remove your uncommitted changes
+//Tracked files
+git checkout -f
+//Untracked files
+git clean -fd
+//Save your changes for later
+//Tracked files
+git stash
+//Tracked files and untracked files
+git stash -u
+//Reapply your latest stash after git pull:
+git stash pop
