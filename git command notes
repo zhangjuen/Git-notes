@@ -35,3 +35,5 @@ git stash
 git stash -u
 //Reapply your latest stash after git pull:
 git stash pop
+
+git checkout -- *.*
